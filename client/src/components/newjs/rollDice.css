@@ -1,0 +1,55 @@
+.roll{
+    top: 10px;
+    padding-right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.dice_1 {
+    width: 70px;
+    height: 70px;
+} 
+.game-button-roll.red {
+    background: repeating-linear-gradient(
+      45deg,
+      #ff4f4c,
+      #ff4f4c 5px,
+      #ff4643 5px,
+      #ff4643 10px
+    );
+    box-shadow: 0 6px 0 #ae2725, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+      0 10px 0 5px #831614, 0 12px 0 5px #a33634, 0 15px 0 5px #631716,
+      0 15px 1px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgba(160, 25, 23, 0.5);
+    text-shadow: 2px 2px 1px #d72d21, -2px 2px 1px #d72d21, 2px -2px 1px #d72d21,
+      -2px -2px 1px #d72d21, 0px 2px 1px #d72d21, 0px -2px 1px #d72d21,
+      0px 4px 1px #930704, 2px 4px 1px #930704, -2px 4px 1px #930704;
+}
+  
+.game-button-roll.red:hover {
+    top: 2px;
+    box-shadow: 0 4px 0 #ae2725, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+      0 8px 0 5px #831614, 0 10px 0 5px #a33634, 0 13px 0 5px #631716,
+      0 13px 1px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  
+}
